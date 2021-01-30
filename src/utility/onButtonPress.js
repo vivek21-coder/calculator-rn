@@ -238,9 +238,9 @@ const backspace = (setQuery, setAns) => {
     return rv;
   });
 
-  setAns((t) => {
+  setAns(() => {
     if (Number.isNaN(ans)) {
-      return t;
+      return '';
     }
     return `${ans}`;
   });
